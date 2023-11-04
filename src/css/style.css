@@ -1,0 +1,116 @@
+body{
+    background-color: var(--violet);
+    position: relative;
+    min-width: 900px;
+}
+
+.container{
+    height: 100vh;
+    background: url('../images/bg-desktop.svg')  no-repeat;
+    background-size: cover;
+    display: grid;
+    grid: "container-logo container-logo" 15%
+          "mockups        text-principal" 65%
+          ".         rodape" 20% / 60% 40%;
+}
+
+.container .container-logo .logo{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.mockups{
+    grid-area: mockups;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-principal{
+    grid-area: text-principal;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+.container-logo{
+    grid-area: container-logo;
+}
+
+.text-principal h1{
+    font-weight: 600;
+    color: white;
+    font-size: 3.2rem;
+    margin-top: 50px;
+}
+
+.text-principal p{
+    font-weight: 400;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    line-height: 27px;
+}
+
+.text-principal a{
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    margin: 20px 30px;
+    background-color: white;
+    padding: 15px 40px;
+    border-radius: 35px;
+    color: var(--violet);
+}
+
+.text-principal a:hover{
+    background-color: var(--Soft);
+    transition: 0.3s;
+    color: white;
+}
+
+.text-principal a:active{
+    transition: 0.5s;
+    color: var(--violet);
+}
+
+footer{
+    grid-area: rodape;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 40px;
+}
+
+footer nav a{
+    margin-left: 20px;
+    border: solid white 2px;
+    border-radius: 50%;
+    color: white;
+}
+
+.facebook{
+    padding:15px 20px;
+}
+
+.twitter{
+    padding:15px 16px;
+}
+
+.instagram{
+    padding: 15px 18px;
+}
+
+.facebook:hover , .twitter:hover , .instagram:hover{
+    border: solid var(--Soft) 2px;
+    color: var(--Soft);
+    transition: 0.2s;
+}
+
+.facebook:active, .twitter:active, .instagram:active{
+    color: white;
+}
